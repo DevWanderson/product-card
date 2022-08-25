@@ -6,15 +6,14 @@ body{
     background-color: hsl(30, 38%, 92%);
     margin: 0;
     padding: 0;
-    width: 1440px;
+    width: auto;
     height: auto;
     display: flex;
-    position: absolute;
+    /*Sugestion user @azhar1038*/
+    height: 100vh;
+    width: 100vw;
     align-items: center;
     justify-content: center;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 /*=========SECTION==========*/
@@ -136,7 +135,7 @@ button:hover {
     color: hsl(228, 45%, 44%); 
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 800px){
     .container {
         border-radius: 10px;
         width: 350px;
@@ -146,6 +145,7 @@ button:hover {
         flex-direction: column;
     }
     .container img {
+        background-image: url(./images/image-product-mobile.jpg);
         max-width: 350px;
         max-height: 230px;
         width: auto;
